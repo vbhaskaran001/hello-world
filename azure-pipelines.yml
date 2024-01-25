@@ -28,7 +28,7 @@ stages:
     pool:
       vmImage: $(vmImageName)
       stratergy:
-        parallelJobs: 2
+        parallelJobs: 1
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
